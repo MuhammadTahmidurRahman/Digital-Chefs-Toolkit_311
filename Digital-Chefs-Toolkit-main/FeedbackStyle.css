@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('feedback.png');
+    background-size: cover;
+    background-position: center;
+    color: #654321;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-column, .right-column {
+    width: 25%;
+    padding: 20px;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-column {
+    left: 0;
+}
+
+.right-column {
+    right: 0;
+}
+
+.center-column {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #5A3E36; 
+}
+
+.search-box h2, .user-profile h2, .recipe-feed h2 {
+    color: #5A3E36; 
+}
+
+.search-box select, .search-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+.recipe-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipe-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.recipe-title, .recipe-details, .recipe-description {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.recipe-title h3 {
+    margin-bottom: 10px;
+    color: #5A3E36; 
+}
+
+.recipe-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.recipe-food-type, .recipe-cuisine {
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.recipe-description {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #efeeef;
+    border-radius: 10px;
+}
+
+.feedback-link {
+    text-align: center;
+    margin-top: auto; 
+    padding-top: 20px; 
+}
+
+.feedback-link a {
+    color: #5A3E36;
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+.user-profile {
+    margin-bottom: 40px; 
+}
+
+.user-profile p {
+    font-size: 20px; 
+}
+
+.user-profile button, .post-recipe button, .my-posts-button {
+    width: auto; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    margin: 10px 5px; 
+    cursor: pointer; 
+    font-family: "Poppins", Arial, sans-serif; 
+    display: inline-block; 
+}
